@@ -1,137 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Malvin | Developer & AI Enthusiast</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0); }
-    }
-
-    .floating-logo {
-      animation: float 4s ease-in-out infinite;
-    }
-
-    .hero-banner {
-      background: linear-gradient(to bottom right, #afc1fc, #ffffff);
-    }
-  </style>
-</head>
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Navigation Bar -->
-  <header class="relative bg-black text-white flex justify-between items-center px-6 py-6 md:py-8">
-    <div class="absolute top-12 ml-40 md:left-40 transform -translate-y-1/2 z-10">
-      <img src="assets/logo.png" alt="ONYX Tech Logo" class="floating-logo w-24 h-24 md:w-60 md:h-60 rounded-full bg-black shadow-lg">
-    </div>
-    <div class="w-16 md:w-32"></div>
-    <nav class="space-x-4 md:space-x-6 text-lg md:text-xl mr-6 md:mr-[350px]">
-      <a href="#about" class="hover:text-indigo-400">About</a>
-      <a href="#skills" class="hover:text-indigo-400">Skill Set</a>
-      <a href="#blog" class="hover:text-indigo-400">Blog</a>
-      <a href="#contact" class="bg-[#5BA3E6] text-black px-3 py-1 rounded-full hover:bg-gray-300">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malvin Haparimwi Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Malvin Haparimwi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="about" class="hero-banner py-20 px-6 md:px-20 flex flex-col md:flex-row items-center">
-    <div class="md:w-1/2 md:ml-60 text-center md:text-left mb-[120px]" data-aos="fade-right">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-        Hi, I am <br><span class="text-indigo-600">Malvin Haparimwi</span>
-      </h1>
-      <p class="text-md sm:text-lg text-gray-600 mb-6">I am the CEO of ONYX Tech Group which provides AI and robotics solutions.  
-        ONYX <br> offers web development services as well as software development for any niche. <br> I also offer trainings in AI, robotics and software development.</p>
-      <div class="flex justify-center md:justify-start space-x-6">
-        <a href="#" class="hover:scale-110 transition"><img src="assets/email-icon.png" alt="Email" class="w-[60px] h-[60px]"></a>
-        <a href="#" class="hover:scale-110 transition"><img src="assets/github-icon.png" alt="GitHub" class="w-[60px] h-[60px]"></a>
-        <a href="#" class="hover:scale-110 transition"><img src="assets/linkedin-icon.png" alt="LinkedIn" class="w-[60px] h-[60px]"></a>
-        <a href="#" class="hover:scale-110 transition"><img src="assets/discord-icon.png" alt="Discord" class="w-[60px] h-[60px]"></a>
+    <nav id="hamburger-nav">
+      <div class="logo">Malvin Haparimwi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
-    </div>
-    <div class="md:w-1/2 mt-10 md:mt-0 text-center" data-aos="fade-left">
-      <img src="assets/malvin-placeholder.jpeg" alt="Profile" class="rounded-2xl w-full max-w-[300px] md:max-w-[450px]" />
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="bg-gray-100 py-16 md:py-20 px-6 md:px-20" data-aos="fade-up">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-10 text-center">What I do?</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white shadow-md p-6 rounded-lg">
-        <h3 class="text-xl font-semibold mb-2">User Experience (UX)</h3>
-        <p class="text-gray-600">Creating intuitive, easy-to-use, and enjoyable designs for users.</p>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Malvin Haparimwi profile picture" />
       </div>
-      <div class="bg-white shadow-md p-6 rounded-lg">
-        <h3 class="text-xl font-semibold mb-2">User Interface (UI)</h3>
-        <p class="text-gray-600">Crafting clean and beautiful front-end interfaces with attention to detail.</p>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Malvin Haparimwi</h1>
+        <p class="section__text__p2">Java Developer | Networks Engineer | Robotics Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/malvin-haparimwi-244b2b379/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Malvinhaparimwi'"
+          />
+        </div>
       </div>
-      <div class="bg-white shadow-md p-6 rounded-lg">
-        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
-        <p class="text-gray-600">Building scalable, performant websites with HTML, CSS, JavaScript and PHP.</p>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 Year Internship at Empowerbank Limited</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree Final Year<br />Cisco Certified Networks Associate (CCNA)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I did my Internship, as an Information Technology administrator at Empowerbank from October 2024 to August 
+              2025. I also own a Networks Engineer certificate from Cisco through the CCNA course offered by Computer Center at UZ. 
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Blog Preview Section -->
-  <section id="blog" class="py-16 md:py-20 px-6 md:px-20 bg-white" data-aos="fade-up">
-    <h2 class="text-2xl sm:text-3xl font-bold mb-10 text-center">Latest Blog Posts</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-xl transition">
-        <img src="assets/blog1.jpg" class="rounded-md mb-4 h-40 w-full object-cover" alt="Blog Image">
-        <span class="text-xs text-indigo-600 uppercase font-bold">Robotics</span>
-        <h3 class="text-xl font-semibold mb-2">How I Built My First Robot</h3>
-        <p class="text-gray-600 mb-4">A step-by-step journey of building a functional robot from scratch...</p>
-        <a href="post.html" class="text-indigo-600 hover:underline font-semibold">Read more →</a>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-xl transition">
-        <img src="assets/blog2.jpg" class="rounded-md mb-4 h-40 w-full object-cover" alt="Blog Image">
-        <span class="text-xs text-indigo-600 uppercase font-bold">AI</span>
-        <h3 class="text-xl font-semibold mb-2">Getting Started with AI</h3>
-        <p class="text-gray-600 mb-4">Tips and tools for beginners who want to dive into the world of artificial intelligence.</p>
-        <a href="post.html" class="text-indigo-600 hover:underline font-semibold">Read more →</a>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="bg-gray-50 p-6 rounded-lg shadow hover:shadow-xl transition">
-        <img src="assets/blog3.jpg" class="rounded-md mb-4 h-40 w-full object-cover" alt="Blog Image">
-        <span class="text-xs text-indigo-600 uppercase font-bold">Internship</span>
-        <h3 class="text-xl font-semibold mb-2">My Internship Experience</h3>
-        <p class="text-gray-600 mb-4">What I learned and contributed while interning at EmpowerBank in Zimbabwe.</p>
-        <a href="post.html" class="text-indigo-600 hover:underline font-semibold">Read more →</a>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">malvinhaparimwi@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="bg-indigo-50 py-16 px-6 md:px-20" data-aos="fade-up">
-    <h2 class="text-2xl sm:text-3xl font-bold text-center mb-10">Testimonials</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-white p-6 rounded shadow">
-        <p class="text-gray-700 italic">"Malvin transformed our digital presence. His team at ONYX Tech delivered ahead of schedule!"</p>
-        <div class="mt-4 text-sm font-semibold">— John M., ZimCommerce CEO</div>
-      </div>
-      <div class="bg-white p-6 rounded shadow">
-        <p class="text-gray-700 italic">"Best robotics training experience I’ve had. Highly recommend!"</p>
-        <div class="mt-4 text-sm font-semibold">— Lisa T., UZ Engineering Student</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact" class="bg-black text-white py-8 md:py-10 text-center text-sm sm:text-base">
-    <p>&copy; 2025 Malvin Haparimwi. Built with ❤️ and ONYX Tech.</p>
-  </footer>
-
-  <!-- AOS Script -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
-</body>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Malvin Haparimwi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
