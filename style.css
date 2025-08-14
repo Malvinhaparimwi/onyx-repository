@@ -54,8 +54,12 @@ main {
 }
 
 .profile_det h1 {
-  font-size: 1.7rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .profile_det h1 span {
@@ -151,4 +155,8 @@ main {
 
 .download_btn a {
   color: aliceblue;
+}
+
+.text {
+  height: 40px;
 }
