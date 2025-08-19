@@ -23,13 +23,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   /* background-color: #0f141c; */
 }
 
 .side_bar {
-  width: 30%;
+  width: 20%;
   height: 100vh;
   background-color: #181722;
   display: flex;
@@ -40,13 +40,27 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 85%;
   background-color: #0f141c;
   height: 100vh;
+  overflow-y: scroll;
+}
+
+main::-webkit-scrollbar{
+  width: 2px;
+  background-color: transparent;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5% 8%;
 }
 
 .profile_img {
-  width: 70%;
+  width: 60%;
 }
 
 .profile_img img {
@@ -145,12 +159,12 @@ main {
   color: aliceblue;
   position: absolute;
   background-color: #0f141c;
-  left: 1%;
+  left: 0%;
   transition: .6s ease;
 }
 
 .download_btn:hover i {
-  left: 7%;
+  left: 1%;
 }
 
 .download_btn a {
@@ -163,19 +177,25 @@ main {
 
 .hero_img img {
   width: 100%;
+  border-top-left-radius: 12%;
+  border-top-right-radius: 12%;
 }
 
 /* Hero Section */
 .hero {
-  width: 100%;
+  width: 80%;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10% 2%;
+  margin-left: 8%;
+  padding-bottom: 0px;
 }
 
 .hero_img {
   width: 50%;
+  border-radius: 30px;
 }
 
 .content {
@@ -202,7 +222,7 @@ main {
 .content p{
   font-size: 1.2rem;
   font-weight: 400;
-  color: rgba(131, 131, 131, 0.5);
+  color: rgb(165, 165, 165);
   margin-top: 30px;
 }
 
@@ -252,4 +272,58 @@ button:hover:after{
 
 .btn2 {
   background-color: rgb(240, 249, 109);
+}
+
+.about {
+  flex-direction: column;
+}
+
+.headings {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.headings h1{
+  font-size: 3rem;
+  color: aliceblue;
+
+}
+
+.headings:after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 90%;
+  height: 2px;
+  background-color: aliceblue;
+}
+
+.about p {
+  font-size: 1.5rem;
+  color: rgb(165, 165, 165);
+  padding-top: 2%;
+  padding-right: 10%;
+}
+
+.about p span {
+  color: aliceblue;
+}
+
+.about_info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: rgb(165, 165, 165);
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.info h2 span {
+  color: rgb(165, 165, 165);
+  font-weight: 300;
 }
