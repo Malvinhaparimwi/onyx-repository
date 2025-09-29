@@ -71,9 +71,9 @@ const Contact = () => {
         "template_mf5x3bh",
         {
           from_name: form.name,
-          to_name: "Lohit Kolluri",
+          to_name: "Malvin Haparimwi",
           from_email: form.email,
-          to_email: "lohitkolluri@gmail.com",
+          to_email: "malvinhaparimwi@gmail.com",
           message: form.message,
         },
         "p-gXzzyvEhPaJ0XA-"
@@ -81,7 +81,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          setConfirmation("Thank you! I will get back to you as soon as possible.");
+          setConfirmation("Thank you! For showing interests in me.");
 
           setForm({
             name: "",

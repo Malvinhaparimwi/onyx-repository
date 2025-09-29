@@ -1,20 +1,20 @@
 import {
-  c,
+  prediction,
   python,
   java,
-  cpp,
+  poutry,
   javascript,
   html,
   css,
   reactjs,
   tailwind,
-  nodejs,
+  ros2,
   git,
-  edunet,
-  weatherpedia,
-  termpw,
-  payloadmaster,
-  threejs,
+  empower,
+  robot,
+  android,
+  arduino,
+  blender,
   mhft,
   sketcher,
   mathwork,
@@ -39,9 +39,9 @@ export const navLinks = [
 
 export const services = [
   { title: "Python", icon: python },
-  { title: "Arduino", icon: java },
-  { title: "Blender", icon: java },
-  { title: "Android", icon: java },
+  { title: "Arduino", icon: arduino },
+  { title: "Blender", icon: blender },
+  { title: "Android", icon: android },
 ];
 
 export const technologies = [
@@ -61,7 +61,7 @@ export const experiences = [
     iconBg: "#161329",
     date: "October 2024 - August 2025",
     points: [
-      "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
+      "Acquired hands-on knowledge of Networking, delving into troubleshooting, as well as system administration.",
       "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
     ],
   },
@@ -70,63 +70,65 @@ export const experiences = [
  
 export const projects = [
   {
-    name: "WeatherPedia",
+    name: "Poutrybot",
     description:
       "SMS Based chat bot system for poultry farming using Python RASA and JavaScript's react native framework.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "HTML", color: "green-text-gradient" },
-      { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
-      { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "RASA", color: "green-text-gradient" },
+      { name: "React Native", color: "pink-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    image: poutry,
+    source_code_link: "https://github.com/Malvinhaparimwi/poutrySmsChatBot.git",
   },
   {
-    name: "Terminal Like Portfolio Website",
+    name: "Android-teleop",
     description:
       "Mobile app ROS2 Robot Tele-operation while viewing camera data using Android Studio",
     tags: [
-      { name: "HTML", color: "blue-text-gradient" },
-      { name: "css", color: "green-text-gradient" },
-      { name: "Javascript", color: "pink-text-gradient" },
+      { name: "ROS", color: "blue-text-gradient" },
+      { name: "Android Studio", color: "green-text-gradient" },
+      { name: "Web Sockets", color: "pink-text-gradient" },
     ],
-    image: termpw,
-    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+    image: ros2,
+    source_code_link: "https://github.com/Malvinhaparimwi/RO2MobileTeleop.git",
   },
   {
-    name: "Mental Health Fitness Tracker",
+    name: "Price-point",
     description:
       "Market prediction using price action from Japanese candlesticks for Stock, Forex or Indices markets.",
     tags: [
-      { name: "Machine Learning", color: "blue-text-gradient" },
-      { name: "Jupyter Notebook", color: "green-text-gradient" },
-      { name: "Regression Algorithms", color: "pink-text-gradient" },
+      { name: "MQL5", color: "blue-text-gradient" },
+      { name: "Deriv's API", color: "green-text-gradient" },
     ],
-    image: mhft,
+    image: prediction,
     source_code_link:
-      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+      "https://github.com/Malvinhaparimwi",
   },
   {
-    name: "PayloadMaster",
+    name: "Q-Robot",
     description:
       "Autonomous fertilizer and pesticide spraying robot.",
     tags: [
-      { name: "shell", color: "blue-text-gradient" },
+      { name: "ROS", color: "blue-text-gradient" },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Computer Vision", color: "blue-text-gradient" },
+      { name: "Electronics", color: "blue-text-gradient" },
+
     ],
-    image: payloadmaster,
-    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
+    image: robot,
+    source_code_link: "https://github.com/Malvinhaparimwi/Q-Robot.git",
   },
   {
-    name: "CompileVortex",
+    name: "Customer Chatbot",
     description:
       "Customer service chatbot for Empowerbank where I did my internship.",
     tags: [
-      { name: "Javascript", color: "blue-text-gradient" },
-      { name: "CSS", color: "green-text-gradient" },
-      { name: "HTML", color: "pink-text-gradient" },
+      { name: "LLM Finetuning", color: "blue-text-gradient" },
+      { name: "FastAPI", color: "green-text-gradient" },
+      { name: "Huggingface Web Hosting", color: "pink-text-gradient" },
     ],
-    image: CompileVortex,
-    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
+    image: empower,
+    source_code_link: "",
   },
 ];

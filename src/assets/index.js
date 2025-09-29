@@ -16,6 +16,10 @@ import payloadmaster from "./projects/payloadmaster.png";
 import mhft from "./projects/mhft.png";
 import sketcher from "./projects/sketcher.png";
 import CompileVortex from "./projects/CompileVortex.png";
+import poutry from "./poutry.png"
+import prediction from "./prediction.png"
+import empower from "./empower.png"
+import ros2 from "./ros2.png"
 
 // Import tech logos
 import css from "./tech/css.png";
@@ -32,6 +36,11 @@ import logo from "./logo.svg";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import robot from "./robot.png"
+import blender from "./blender.png"
+import android from "./android.png"
+import arduino from "./arduino.png"
+import aboutPic from "./aboutpic.png"
 
 export {
   mathwork,
@@ -59,4 +68,13 @@ export {
   menu,
   close,
   eduskill,
+  prediction,
+  empower,
+  poutry,
+  ros2,
+  robot,
+  blender,
+  arduino,
+  android,
+  aboutPic, 
 };

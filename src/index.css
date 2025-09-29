@@ -142,3 +142,12 @@
 .confirmation {
   color: #00ff00;
 }
+
+.aboutPic {
+  padding-top: 10%;
+  padding-left: 55%;
+}
+
+.aboutPic img {
+  border-radius: 60%;
+}
