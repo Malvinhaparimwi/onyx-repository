@@ -38,10 +38,10 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
   { title: "Python", icon: python },
-  { title: "Java", icon: java },
+  { title: "Arduino", icon: java },
+  { title: "Blender", icon: java },
+  { title: "Android", icon: java },
 ];
 
 export const technologies = [
@@ -50,54 +50,29 @@ export const technologies = [
   { name: "JavaScript", icon: javascript },
   { name: "Rect JS", icon: reactjs },
   { name: "Tailwind CSS", icon: tailwind },
-  { name: "Node JS", icon: nodejs },
-  { name: "Three JS", icon: threejs },
   { name: "git", icon: git },
 ];
 
 export const experiences = [
   {
-    title: "AI/ML Intern",
-    company_name: "EduSkill Foundation | AWS Academy | AICTE",
+    title: "Computer Engineering Intern",
+    company_name: "Empowerbank Limited",
     icon: eduskill,
     iconBg: "#161329",
-    date: "Sep 2023 - Nov 2023",
+    date: "October 2024 - August 2025",
     points: [
       "Acquired hands-on knowledge of AWS Cloud Foundation, delving into cloud infrastructure, services, and deployment.",
       "also gaining a solid foundation in Machine Learning, covering topics like algorithms, data analysis, and model building.",
     ],
   },
-  {
-    title: "Mathwork Ai Virtual Intern",
-    company_name: "Mathwork | AICTE",
-    icon: mathwork,
-    iconBg: "#161329",
-    date: "May 2023 - Sep 2023",
-    points: [
-      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
-      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
-      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
-    ],
-  },
-  {
-    title: "Artificial Intelligence Intern",
-    company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
-    iconBg: "#161329",
-    date: "June 2023 - July 2023",
-    points: [
-      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
-      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
-      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
-    ],
-  },
 ];
 
+ 
 export const projects = [
   {
     name: "WeatherPedia",
     description:
-      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
+      "SMS Based chat bot system for poultry farming using Python RASA and JavaScript's react native framework.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "HTML", color: "green-text-gradient" },
@@ -110,7 +85,7 @@ export const projects = [
   {
     name: "Terminal Like Portfolio Website",
     description:
-      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
+      "Mobile app ROS2 Robot Tele-operation while viewing camera data using Android Studio",
     tags: [
       { name: "HTML", color: "blue-text-gradient" },
       { name: "css", color: "green-text-gradient" },
@@ -122,7 +97,7 @@ export const projects = [
   {
     name: "Mental Health Fitness Tracker",
     description:
-      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+      "Market prediction using price action from Japanese candlesticks for Stock, Forex or Indices markets.",
     tags: [
       { name: "Machine Learning", color: "blue-text-gradient" },
       { name: "Jupyter Notebook", color: "green-text-gradient" },
@@ -135,7 +110,7 @@ export const projects = [
   {
     name: "PayloadMaster",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "Autonomous fertilizer and pesticide spraying robot.",
     tags: [
       { name: "shell", color: "blue-text-gradient" },
     ],
@@ -145,7 +120,7 @@ export const projects = [
   {
     name: "CompileVortex",
     description:
-      "Tool to automate payload creation using the Metasploit framework",
+      "Customer service chatbot for Empowerbank where I did my internship.",
     tags: [
       { name: "Javascript", color: "blue-text-gradient" },
       { name: "CSS", color: "green-text-gradient" },
@@ -153,18 +128,5 @@ export const projects = [
     ],
     image: CompileVortex,
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
-  },
-  {
-    name: "Sketcher",
-    description:
-      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
-    tags: [
-      { name: "OpenCV", color: "blue-text-gradient" },
-      { name: "Matplotlib", color: "green-text-gradient" },
-      { name: "Python", color: "pink-text-gradient" },
-    ],
-
-    image: sketcher,
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
   },
 ];
